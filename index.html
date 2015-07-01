@@ -38,6 +38,32 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<!-- live demo -->
+        <link rel="stylesheet" type="text/less" href="less/app.less">
+        <script type="text/javascript" src="js/less.min.js"></script>
+
+        <script type="text/html" id="example-container-template">
+            <style data-bind="scopedStyle: { stylesheet: styles, scope: id }"></style>
+            <div style="width:100%; clear: both" class="example-container">
+                    <div style="float:left; width:45%">
+                        <h4 class="example-column-heading">Code:</h4>
+                        <pre class="example-source-code"><code data-bind="text: markup"></code></pre>
+                    </div>
+                    <div style="float:right; width:45%">
+                        <h4 class="example-column-he">Result:</h4>
+                        <div class="example-live" data-bind="html: markup"></div>
+                    </div>                    
+            </div>
+        </script>
+
+        <script type="text/html" id="demo-section-template">
+            <section data-bind="css: { active: $index() === 0 }, attr: { id: id }" class="live-demo-section">
+            	<h2 data-bind="text: title"></h2>
+                <example-container params="id: id">
+                </example-container>
+            </section>
+        </script>
 	</head>
 
 	<body>
@@ -139,12 +165,19 @@
 					<h1>HTML-элементы</h1>
 				</section>
 
-				<section>
-					
-				</section>				
+                <!-- ko foreach: examples -->
+                    <!-- ko template: { name: 'demo-section-template' } -->
+                    <!-- /ko -->
+                <!-- /ko -->		
 
 			</div>
 		</div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+        <script type="text/javascript" src="js/scoped-style.binding.js"></script>
+        <script type="text/javascript" src="js/example-container.component.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>		
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
