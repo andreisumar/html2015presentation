@@ -1,0 +1,24 @@
+{
+    "events": [
+        {
+            "start_date": {
+                "year":			"1980"
+            },
+            "text": {
+                "headline": "Тим Бернерс-Ли создал прототип ENQUIRE",
+                "text": ""
+            },
+            "type": "overview"
+        },
+        {
+            "start_date": {
+                "year":         "1990"
+            },
+            "text": {
+                "headline": "Бернерс-Ли разработал спецификацию HTML, браузер и серверную часть",
+                "text": ""
+            },
+            "type": "overview"
+        }
+    ]
+}
