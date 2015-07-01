@@ -1,0 +1,39 @@
+section.what-is-html pre,
+section.what-is-html code {
+	display: inline;
+}
+
+
+section.html-vs-xhtml ul {
+	list-style: none;
+}
+section.html-vs-xhtml pre {
+	width: auto;
+	display: inline-block;
+	margin: 5px 0;
+}
+section.html-vs-xhtml li:before {
+	position: relative;
+	top: 6px;
+	float: left;
+	font-size: 26px;
+	width: 30px;	
+}
+section.html-vs-xhtml .no:before {
+	content:'✘';
+	color: #ea1240;
+}
+section.html-vs-xhtml .yes:before {
+	top: 8px;
+	content:'✔';
+	color: #60f050;
+}
+
+section.html-structure pre {
+	margin-top: 0;
+	margin-bottom: 0;
+	box-shadow: none;
+}
+section.html-structure pre.fragment.highlight-current-blue.current-fragment * {
+	color: #1b91ff!important;
+}

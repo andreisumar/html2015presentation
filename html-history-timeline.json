@@ -6,7 +6,7 @@
             },
             "text": {
                 "headline": "Тим Бернерс-Ли создал прототип ENQUIRE",
-                "text": ""
+                "text": "ENQUIRE — система обмена документами в CERN."
             },
             "type": "overview"
         },
@@ -16,6 +16,66 @@
             },
             "text": {
                 "headline": "Бернерс-Ли разработал спецификацию HTML, браузер и серверную часть",
+                "text": ""
+            },
+            "type": "overview"
+        },
+        {
+            "start_date": {
+                "year":         "1991"
+            },
+            "text": {
+                "headline": "Выпущен документ “HTML Tags”",
+                "text": "описывающий 18 базовых HTML-элементов; 11 из них используются и сегодня."
+            },
+            "type": "overview"
+        },
+        {
+            "start_date": {
+                "year":         "1993"
+            },
+            "text": {
+                "headline": "IETF выпущен первый черновик спецификации HTML",
+                "text": ""
+            },
+            "type": "overview"
+        },
+        {
+            "start_date": {
+                "year":         "1995"
+            },
+            "text": {
+                "headline": "HTML Working Group опубликовала спецификацию “HTML 2.0”",
+                "text": ""
+            },
+            "type": "overview"
+        },
+        {
+            "start_date": {
+                "year":         "1999"
+            },
+            "text": {
+                "headline": "HTML 4.01 опубликован в качестве W3C Recommendation",
+                "text": ""
+            },
+            "type": "overview"
+        },
+        {
+            "start_date": {
+                "year":         "2000"
+            },
+            "text": {
+                "headline": "HTML становится международным стандартом (ISO/IEC)",
+                "text": ""
+            },
+            "type": "overview"
+        },
+        {
+            "start_date": {
+                "year":         "2014"
+            },
+            "text": {
+                "headline": "HTML5 опубликован в качестве W3C Recommendation",
                 "text": ""
             },
             "type": "overview"
