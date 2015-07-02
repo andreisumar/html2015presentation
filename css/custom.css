@@ -34,6 +34,6 @@ section.html-structure pre {
 	margin-bottom: 0;
 	box-shadow: none;
 }
-section.html-structure pre.fragment.highlight-current-blue.current-fragment * {
-	color: #1b91ff!important;
+section.html-structure pre.fragment.highlight-current-red.current-fragment * {
+	color: #ff2c2d!important;
 }

@@ -92,15 +92,7 @@
 		        "title": "Table"
 		    },
 		    {
-		        "id": "ex23-ids-classes",
-		        "title": "IDs & Classes"
-		    },
-		    {
-		        "id": "ex24-title",
-		        "title": "Title Attribute"
-		    },
-		    {
-		        "id": "ex25-noscript",
+		        "id": "ex23-noscript",
 		        "title": "Noscript"
 		    }
 		]
