@@ -5,8 +5,8 @@
                 "year":			"1980"
             },
             "text": {
-                "headline": "Тим Бернерс-Ли создал прототип ENQUIRE",
-                "text": "ENQUIRE — система обмена документами в CERN."
+                "headline": "Tim Berners-Lee prototyped ENQUIRE",
+                "text": "ENQUIRE was a document exchange system used in CERN. It had pages called cards and hyperlinks within them which resembles modern HTML concepts."
             },
             "type": "overview"
         },
@@ -15,7 +15,7 @@
                 "year":         "1990"
             },
             "text": {
-                "headline": "Бернерс-Ли разработал спецификацию HTML, браузер и серверную часть",
+                "headline": "Tim Berners-Lee specified HTML and implemented the browser and server software",
                 "text": ""
             },
             "type": "overview"
@@ -25,8 +25,8 @@
                 "year":         "1991"
             },
             "text": {
-                "headline": "Выпущен документ “HTML Tags”",
-                "text": "описывающий 18 базовых HTML-элементов; 11 из них используются и сегодня."
+                "headline": "Release of the “HTML Tags” document",
+                "text": "“HTML Tags” was the first publicly available description of the language; it included 18 basic HTML elements, 11 of which are still used nowadays."
             },
             "type": "overview"
         },
@@ -35,7 +35,7 @@
                 "year":         "1993"
             },
             "text": {
-                "headline": "IETF выпущен первый черновик спецификации HTML",
+                "headline": "IETF released the first draft of the HTML specification",
                 "text": ""
             },
             "type": "overview"
@@ -45,7 +45,7 @@
                 "year":         "1995"
             },
             "text": {
-                "headline": "HTML Working Group опубликовала спецификацию “HTML 2.0”",
+                "headline": "HTML Working Group published the specification of “HTML 2.0”",
                 "text": ""
             },
             "type": "overview"
@@ -55,7 +55,7 @@
                 "year":         "1999"
             },
             "text": {
-                "headline": "HTML 4.01 опубликован в качестве W3C Recommendation",
+                "headline": "HTML 4.01 was published as a W3C Recommendation",
                 "text": ""
             },
             "type": "overview"
@@ -65,7 +65,7 @@
                 "year":         "2000"
             },
             "text": {
-                "headline": "HTML становится международным стандартом (ISO/IEC)",
+                "headline": "HTML became an international standard (ISO/IEC)",
                 "text": ""
             },
             "type": "overview"
@@ -75,7 +75,7 @@
                 "year":         "2014"
             },
             "text": {
-                "headline": "HTML5 опубликован в качестве W3C Recommendation",
+                "headline": "HTML5 was published as a W3C Recommendation",
                 "text": ""
             },
             "type": "overview"
