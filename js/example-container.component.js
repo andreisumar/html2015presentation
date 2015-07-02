@@ -18,7 +18,8 @@ var data = '<b>ff</b>';
 
 	ko.components.register('example-container', {
 		viewModel: ExampleContainerViewModel,
-		template: { element: 'example-container-template' }
+		template: { element: 'example-container-template' },
+		synchronous: true
 	});
 
 
