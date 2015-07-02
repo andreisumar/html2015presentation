@@ -94,6 +94,22 @@
 		    {
 		        "id": "ex23-noscript",
 		        "title": "Noscript"
+		    },
+		    {
+		        "id": "ex24-audio",
+		        "title": "Audio"
+		    },
+		    {
+		        "id": "ex25-video",
+		        "title": "Video"
+		    },
+		    {
+		        "id": "ex26-canvas",
+		        "title": "Canvas"
+		    },
+		    {
+		        "id": "ex27-svg",
+		        "title": "SVG"
 		    }
 		]
 	};
