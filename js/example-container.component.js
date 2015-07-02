@@ -6,11 +6,24 @@
 
 		self.id = params.id;
 		self.markup = ko.observable('');
+		self.sourceCode = ko.observable('');
 		self.styles = ko.observable('');
 var data = '<b>ff</b>';
-		$.get('examples/' + params.id + '/markup.html', function (data) {
-			self.markup(data);
-		});
+
+		var processMarkup = function (data) {
+			var $el = $('<div>').html(data);
+			var $markup = $el.find('example-markup');
+			var $code = $el.find('example-code');
+			if ($markup.length && $code.length) {
+				self.markup($markup.html());
+				self.sourceCode($code.html().replace(/^\n+|\n+$/g, '')); //remove newlines at both ends
+			}else{
+				self.markup(data);
+				self.sourceCode(data);
+			}
+		};
+
+		$.get('examples/' + params.id + '/markup.html', processMarkup);
 		$.get('examples/' + params.id + '/styles.less', function (data) {
 			self.styles(data);
 		});		
