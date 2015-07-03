@@ -1,84 +1,49 @@
-{
-    "events": [
-        {
-            "start_date": {
-                "year":			"1980"
+{  
+    "timeline":{
+        "headline":"",
+        "type":"default",
+        "text":"",	
+        "date":[  
+            {  
+                "startDate":"1980",
+                "headline":"Tim Berners-Lee prototyped ENQUIRE",
+                "text":"ENQUIRE was a document exchange system used in CERN. It had pages called cards and hyperlinks within them which resembles modern HTML concepts."
             },
-            "text": {
-                "headline": "Tim Berners-Lee prototyped ENQUIRE",
-                "text": "ENQUIRE was a document exchange system used in CERN. It had pages called cards and hyperlinks within them which resembles modern HTML concepts."
+            {  
+                "startDate":"1990",
+                "headline":"Tim Berners-Lee specified HTML and implemented the browser and server software",
+                "text":""
             },
-            "type": "overview"
-        },
-        {
-            "start_date": {
-                "year":         "1990"
+            {  
+                "startDate":"1991",
+                "headline":"Release of the “HTML Tags” document",
+                "text":"“HTML Tags” was the first publicly available description of the language; it included 18 basic HTML elements, 11 of which are still used nowadays."
             },
-            "text": {
-                "headline": "Tim Berners-Lee specified HTML and implemented the browser and server software",
-                "text": ""
+            {  
+                "startDate":"1993",
+                "headline":"IETF released the first draft of the HTML specification",
+                "text":""
             },
-            "type": "overview"
-        },
-        {
-            "start_date": {
-                "year":         "1991"
+            {  
+                "startDate":"1995",
+                "headline":"HTML Working Group published the specification of “HTML 2.0”",
+                "text":""
             },
-            "text": {
-                "headline": "Release of the “HTML Tags” document",
-                "text": "“HTML Tags” was the first publicly available description of the language; it included 18 basic HTML elements, 11 of which are still used nowadays."
+            {  
+                "startDate":"1999",
+                "headline":"HTML 4.01 was published as a W3C Recommendation",
+                "text":""
             },
-            "type": "overview"
-        },
-        {
-            "start_date": {
-                "year":         "1993"
+            {  
+                "startDate":"2000",
+                "headline":"HTML became an international standard (ISO/IEC)",
+                "text":""
             },
-            "text": {
-                "headline": "IETF released the first draft of the HTML specification",
-                "text": ""
-            },
-            "type": "overview"
-        },
-        {
-            "start_date": {
-                "year":         "1995"
-            },
-            "text": {
-                "headline": "HTML Working Group published the specification of “HTML 2.0”",
-                "text": ""
-            },
-            "type": "overview"
-        },
-        {
-            "start_date": {
-                "year":         "1999"
-            },
-            "text": {
-                "headline": "HTML 4.01 was published as a W3C Recommendation",
-                "text": ""
-            },
-            "type": "overview"
-        },
-        {
-            "start_date": {
-                "year":         "2000"
-            },
-            "text": {
-                "headline": "HTML became an international standard (ISO/IEC)",
-                "text": ""
-            },
-            "type": "overview"
-        },
-        {
-            "start_date": {
-                "year":         "2014"
-            },
-            "text": {
-                "headline": "HTML5 was published as a W3C Recommendation",
-                "text": ""
-            },
-            "type": "overview"
-        }
-    ]
+            {  
+                "startDate":"2014",
+                "headline":"HTML5 was published as a W3C Recommendation",
+                "text":""
+            }
+        ]
+    }
 }

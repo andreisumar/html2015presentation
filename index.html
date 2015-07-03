@@ -21,8 +21,7 @@
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Timeline.js -->
-		<link rel="stylesheet" href="TimelineJS3/compiled/css/timeline.css">
-		<link rel="stylesheet" href="TimelineJS3/compiled/css/fonts/font.default.css?v1">
+		<link rel="stylesheet" type="text/css" href="TimelineJS/build/css/timeline.css">
 
 		<link rel="stylesheet" href="css/custom.css">
 
@@ -93,7 +92,7 @@
 
 				<section>
 					<h2>The History of HTML</h2>
-					<div id="html-history-timeline" style="min-height:350px"></div>
+					<div id="html-history-timeline" style="margin-left: auto!important; margin-right: auto!important"></div>
 				</section>
 
 				<section>
@@ -236,14 +235,16 @@
 			});
 
 		</script>
-		<script src="TimelineJS3/compiled/js/timeline.js"></script>
+		<script type="text/javascript" src="TimelineJS/build/js/storyjs-embed.js"></script>
 		<script>
-		    var timeline = new VCO.Timeline('html-history-timeline', 'html-history-timeline.json', {
-
-		    });
-//		    window.onresize = function(event) {
-//		        timeline.updateDisplay();
-//		    }
+		    createStoryJS({
+				type:       'timeline',
+				width:      '800',
+				height:     '460',
+				source:     'html-history-timeline.json',
+				embed_id:   'html-history-timeline',
+				start_zoom_adjust : 2
+			});
 		</script>
 	</body>
 </html>
