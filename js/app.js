@@ -48,6 +48,10 @@
 		        "title": "Anchor"
 		    },
 		    {
+		        "id": "ex12-0-legacy-tags",
+		        "title": "Legacy Tags"
+		    },			
+		    {
 		        "id": "ex12-emphasizing",
 		        "title": "Emphasizing"
 		    },
