@@ -1,164 +1,178 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>HTML - HyperText Markup Language</title>
+    <title>HTML - HyperText Markup Language</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Timeline.js -->
-		<link rel="stylesheet" type="text/css" href="TimelineJS/build/css/timeline.css">
+    <!-- Timeline.js -->
+    <link rel="stylesheet" type="text/css" href="TimelineJS/build/css/timeline.css">
 
-		<link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 
-		<!-- live demo -->
-        <link rel="stylesheet" type="text/less" href="less/app.less">
-        <script type="text/javascript" src="js/less.min.js"></script>
+    <!-- live demo -->
+    <link rel="stylesheet" type="text/less" href="less/app.less">
+    <script type="text/javascript" src="js/less.min.js"></script>
 
-        <script type="text/html" id="example-container-template">
-            <style data-bind="scopedStyle: { stylesheet: styles, scope: id }"></style>
-            <div style="width:100%; clear: both" class="example-container">
-                    <div style="float:left; width:45%">
-                        <h4 class="example-column-heading">Code:</h4>
-                        <pre class="example-source-code"><code data-bind="text: sourceCode" class="xml"></code></pre>
-                    </div>
-                    <div style="float:right; width:45%">
-                        <h4 class="example-column-heading">Result:</h4>
-                        <div class="example-live" data-bind="html: markup"></div>
-                    </div>                    
+    <script type="text/html" id="example-container-template">
+        <style data-bind="scopedStyle: { stylesheet: styles, scope: id }"></style>
+        <div style="width:100%; clear: both" class="example-container">
+            <div style="float:left; width:45%">
+                <h4 class="example-column-heading">Code:</h4>
+                <pre class="example-source-code"><code data-bind="text: sourceCode" class="xml"></code></pre>
             </div>
-        </script>
+            <div style="float:right; width:45%">
+                <h4 class="example-column-heading">Result:</h4>
 
-        <script type="text/html" id="demo-section-template">
-            <section data-bind="css: { active: $index() === 0 }, attr: { id: id }" class="live-demo-section">
-            	<h2 data-bind="text: title"></h2>
-                <example-container params="id: id">
-                </example-container>
-            </section>
-        </script>
-	</head>
+                <div class="example-live" data-bind="html: markup"></div>
+            </div>
+        </div>
+    </script>
 
-	<body>
+    <script type="text/html" id="demo-section-template">
+        <section data-bind="css: { active: $index() === 0 }, attr: { id: id }" class="live-demo-section">
+            <h2 data-bind="text: title"></h2>
+            <example-container params="id: id">
+            </example-container>
+        </section>
+    </script>
+</head>
 
-		<div class="reveal">
+<body>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>HTML</h1>
-					<p>
-        				<small>
-        					Created by <a href="https://github.com/andreisumar">Andrei Sumar</a>
-        				</small>
-    				</p>
-				</section>
+<div class="reveal">
 
-				<section class="what-is-html">
-					<h2>What is HTML</h2>
-					<ul>
-						<li class="fragment">HyperText Markup Language</li>
-						<li class="fragment">Standard markup language used to create web pages</li>
-						<li class="fragment">HTML documents are described by tags</li>
-						<li class="fragment">HTML files are interpreted by browsers to render the visible web pages</li>
-					</ul>
-				</section>
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section>
+    <h1>HTML</h1>
 
-				<section>
-					<h2>The History of HTML</h2>
-					<div id="html-history-timeline" style="margin-left: auto!important; margin-right: auto!important"></div>
-					<aside class="notes">
-						<p>
-							В 1980 году британский ученый Тим Бернерс-Ли, сотрудник Европейского института физики частиц (CERN) в Женеве, разработал прототип ENQUIRE - системы обмена документами для сотрудников CERN.
-							В ENQUIRE документы были представлены в виде страниц, которые назывались карточками (cards), между ними можно было перемещаться при помощи ссылок.
-							Многие идеи, использованные в Enquire, спустя 9 лет нашли своё применение во всемирной паутине:
-							<ul>
-								<li>двухсторонние гиперссылки (используются, например, в Wikipedia и MediaWiki)</li>
-								<li>редактирование документов на сервере (как в современных CMS)</li>
-								<li>документы хранились в базе данных</li>
-							</ul>
-						</p>
-						<p>
-							В конце 1990 года Бернерс-Ли завершил работу над спецификацией HTML и разработал браузер, поддерживающий этот язык, и необходимое серверное ПО. В том же году он обратился в CERN с запросом о финансировании проекта, однако получил отказ.
-						</p>
-						<p>
-							В 1991 году он создал документ названный «HTML Tags», в котором предложил 18 элементов для создания веб-страниц.
-							Идея использовать теги, заключенные между угловыми скобками, не его, такие теги уже были в формате SGML (Standard Generalized Markup Language).
-							Тим понимал, что создавать новые стандарты нужно на базе существующих, а разработчики HTML5 и сейчас в полной мере следуют этому принципу.
-							Кроме тега, соответствующего гиперссылкам, предложенные им элементы были в большой мере позаимствованы из SGMLguid - внутреннего формата документации в CERN.
-							11 тегов из «HTML Tags» используются и по сей день.
-						</p>
-						<p>
-							Стандарта HTML 1 никогда не было, первой официальной спецификацией стал HTML 2.0, опубликованный IETF (Internet Engineering Task Force). Многие элементы в этой спецификации были заимствованы из существующих реализаций, например, тег <img> уже поддерживался, лидировавшим тогда браузером Mosaic.
-							Позже на смену IETF пришел W3C (World Wide Web Consortium) и следующие версии стандарта HTML публиковались на www.w3c.org.
-						</p>
-						<p>
-							В версии HTML 4 произошла некоторая «очистка» стандарта. Многие элементы были отмечены как устаревшие и нерекомендованные (В частности, элемент font). Вместо них рекомендовалось использовать таблицы стилей CSS.
-						</p>
-						<p>
-							Во всемирной паутине долгое время использовались стандарты HTML 4.01, XHTML 1.0 и XHTML 1.1. Веб-страницы на практике оказывались свёрстаны с использованием смеси особенностей, представленных различными спецификациями, включая спецификации программных продуктов, например веб-браузеров, а также сложившихся общеупотребительных приёмов.<br/>
-							Web Hypertext Application Technology Working Group (WHATWG) начала работу над новым стандартом в 2004 году, когда World Wide Web Consortium (W3C) сосредоточился на будущих разработках XHTML 2.0, а HTML 4.01 не изменялся с 2000 года. В 2009 году W3C признал, что срок работы у рабочей группы XHTML 2.0 истёк, и решил не возобновлять его. Впоследствии W3C и WHATWG совместно разрабатывали HTML5.<br/>
-							HTML5 был создан как единый язык разметки, который мог бы сочетать синтаксические нормы HTML и XHTML. Он расширяет, улучшает и рационализирует разметку документов, а также добавляет единый API для сложных веб-приложений.
-							В HTML5 реализовано множество новых синтаксических особенностей. Например, элементы <video>, <audio> и <canvas>, а также возможность использования SVG и математических формул. Эти новшества разработаны для упрощения создания и управления графическими и мультимедийными объектами в сети без необходимости использования сторонних API и плагинов.
-						</p>
-						<p>
-							С 28 октября 2014 года W3C официально рекомендует использовать HTML5 — это значит, что стандарт окончательно финализирован и готов к широкому использованию.
-						</p>
-					</aside>					
-				</section>
+    <p>
+        <small>
+            Created by <a href="https://github.com/andreisumar">Andrei Sumar</a>
+        </small>
+    </p>
+</section>
 
-				<section>
-					<h2>HTML Elements Structure</h2>
-					<p>
-						<img style="background: white; border: none"; src="images/html-element-structure.png">
-					</p>
-				</section>
-				
-				<section>
-					<h2>Sample HTML File</h2>
+<section class="what-is-html">
+    <h2>What is HTML</h2>
+    <ul>
+        <li class="fragment">HyperText Markup Language</li>
+        <li class="fragment">Standard markup language used to create web pages</li>
+        <li class="fragment">HTML documents are described by tags</li>
+        <li class="fragment">HTML files are interpreted by browsers to render the visible web pages</li>
+    </ul>
+    <aside class="notes">
+        Язык гипертекстовой разметки, служащий для создания веб-страниц. Состоит из тэгов и интерпретируется
+        браузерами
+        для отображения вебстраниц.
+    </aside>
+</section>
+
+<section>
+    <h2>The History of HTML</h2>
+
+    <div id="html-history-timeline" style="margin-left: auto!important; margin-right: auto!important"></div>
+    <aside class="notes">
+        <p>
+            В 1980 году британский ученый Тим Бернерс-Ли разработал прототип ENQUIRE - системы обмена
+            документами для
+            сотрудников CERN.
+            В ENQUIRE документы были представлены в виде страниц, которые назывались карточками (cards), между
+            ними можно было перемещаться при помощи ссылок.
+        </p>
+
+        <p>Многие идеи, использованные в Enquire, спустя 9 лет нашли своё применение при формировании языка
+            HTML.</p>
+
+        <p>
+            В конце 1990 года Бернерс-Ли завершил работу над спецификацией HTML и разработал браузер,
+            поддерживающий этот язык.
+        </p>
+
+        <p>
+            В 1991 году он создал документ названный «HTML Tags», в котором предложил 18 элементов для создания
+            веб-страниц.
+        </p>
+
+        <p>
+            Стандарта HTML 1 никогда не было, первой официальной спецификацией стал HTML 2.0. Многие элементы в
+            этой
+            спецификации были заимствованы из существующих реализаций.
+        </p>
+
+        <p>
+            В версии HTML 4 произошла некоторая «очистка» стандарта. Многие элементы были отмечены как
+            устаревшие и нерекомендованные. Вместо них рекомендовалось использовать
+            таблицы стилей CSS.
+        </p>
+
+        <p>
+            С 28 октября 2014 года W3C официально рекомендует использовать HTML5 — это значит, что стандарт
+            окончательно финализирован и готов к широкому использованию.
+        </p>
+    </aside>
+</section>
+
+<section>
+    <h2>Sample HTML Document</h2>
 					<pre><code data-trim>
 &lt;!DOCTYPE html&gt;
-&lt;html lang="en">
+&lt;html>
     &lt;head&gt;
         &lt;meta charset="utf-8"&gt;
         &lt;title&gt;Hello World&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;h1&gt;Hello World&lt;/h1&gt;
-        &lt;p&lt;This is a website.&lt;/p&gt;
+        &lt;p&gt;This is a website.&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 					</code></pre>
-				</section>				
+    <aside class="notes">
+        <p>Имеет иерархическую структуру и состоит из тегов</p>
+    </aside>
+</section>
 
-				<section>
-					<h2>XHTML</h2>
+<section>
+    <h2>HTML Elements Structure</h2>
+
+    <p>
+        <img style="background: white; border: none" src="images/html-element-structure.png"/>
+    </p>
+</section>
+
+<section>
+    <h2>XHTML</h2>
 					<pre><code data-trim>
 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
  &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
@@ -173,116 +187,197 @@
     &lt;/body&gt;
 &lt;/html&gt;
 					</code></pre>
-				</section>	
+    <aside class="notes">
+        <p>
+            Язык XHTML является более строгим вариантом HTML, он следует всем ограничениям XML и, фактически, XHTML
+            можно воспринимать как приложение языка XML к области разметки гипертекста.
+        </p>
+    </aside>
+</section>
 
-				<section class="html-vs-xhtml">
-					<h2>HTML vs. XHTML</h2>
-					<ul>
-						<li class="no"><pre><code data-trim>&lt;A Href=&quot;/xhtml/xhtml_tutorial.html&quot;&gt;XHTML Tutorial&lt;/A&gt;</code></pre></li>
-						<li class="yes"><pre><code>&lt;a href=&quot;/xhtml/xhtml_tutorial.html&quot;&gt;XHTML Tutorial&lt;/a&gt;</code></pre></li>
-						<li class="no"><pre><code>&lt;p&gt;This paragraph is not written according to XHTML syntax.</code></pre></li>
-						<li class="no"><pre><code>&lt;img src=&quot;/images/xhtml.gif&quot; &gt;</code></pre></li>
-						<li class="yes"><pre><code>&lt;p&gt;This paragraph is written according to XHTML syntax.&lt;/p&gt;</code></pre></li>
-						<li class="yes"><pre><code>&lt;img src=&quot;/images/xhtml.gif&quot; /&gt;</code></pre></li>
-						<li class="no"><pre><code>&lt;img src=&quot;/images/xhtml.gif&quot; width=250 height=50 /&gt;</code></pre></li>
-						<li class="yes"><pre><code>&lt;img src=&quot;/images/xhtml.gif&quot; width=&quot;250&quot; height=&quot;50&quot; /&gt;</code></pre></li>
-						<li class="no"><pre><code>&lt;option selected&gt;</code></pre></li>
-						<li class="yes"><pre><code>&lt;option selected=&quot;selected&quot;&gt;</code></pre></li>
-					</ul>
-				</section>
+<section class="html-vs-xhtml">
+    <h2>HTML vs. XHTML</h2>
+    <ul>
+        <li class="no">
+                    <pre><code
+                            data-trim>&lt;A Href=&quot;/xhtml/xhtml_tutorial.html&quot;&gt;XHTML Tutorial&lt;/A&gt;</code></pre>
+        </li>
+        <li class="yes">
+            <pre><code>&lt;a href=&quot;/xhtml/xhtml_tutorial.html&quot;&gt;XHTML Tutorial&lt;/a&gt;</code></pre>
+        </li>
+        <li class="no">
+            <pre><code>&lt;p&gt;This paragraph is not written according to XHTML syntax.</code></pre>
+        </li>
+        <li class="no">
+            <pre><code>&lt;img src=&quot;/images/xhtml.gif&quot; &gt;</code></pre>
+        </li>
+        <li class="yes">
+            <pre><code>&lt;p&gt;This paragraph is written according to XHTML syntax.&lt;/p&gt;</code></pre>
+        </li>
+        <li class="yes">
+            <pre><code>&lt;img src=&quot;/images/xhtml.gif&quot; /&gt;</code></pre>
+        </li>
+        <li class="no">
+            <pre><code>&lt;img src=&quot;/images/xhtml.gif&quot; width=250 height=50 /&gt;</code></pre>
+        </li>
+        <li class="yes">
+            <pre><code>&lt;img src=&quot;/images/xhtml.gif&quot; width=&quot;250&quot; height=&quot;50&quot; /&gt;</code></pre>
+        </li>
+        <li class="no">
+            <pre><code>&lt;option selected&gt;</code></pre>
+        </li>
+        <li class="yes">
+            <pre><code>&lt;option selected=&quot;selected&quot;&gt;</code></pre>
+        </li>
+    </ul>
+    <aside class="notes">
+        <ul>
+            <li>название тегов и атрибутов с маленькой буквы</li>
+            <li>теги должны быть закрыты</li>
+            <li>значения атрибутов должны быть объявлены и взяты в кавычки</li>
+        </ul>
+    </aside>
+</section>
 
-				<section class="html-structure">
-					<h2>HTML File Structure</h2>
+<section class="html-structure">
+    <h2>HTML Document Structure</h2>
 					<pre class="fragment highlight-code highlight-current-red" data-fragment-index="1">
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;</pre>
-<pre class="fragment highlight-code highlight-current-red" data-fragment-index="2">    &lt;head&gt;
+&lt;!DOCTYPE html&gt;</pre>
+    <pre class="fragment highlight-code highlight-current-red" data-fragment-index="2">&lt;html&gt;</pre>
+<pre class="fragment highlight-code highlight-current-red" data-fragment-index="3">    &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
         &lt;title&gt;Hello World&lt;/title&gt; 
-    &lt;/head&gt;</pre><pre class="fragment highlight-code highlight-current-red" data-fragment-index="3">
+    &lt;/head&gt;</pre><pre class="fragment highlight-code highlight-current-red" data-fragment-index="4">
     &lt;body&gt;
         &lt;h1&gt;Hello World&lt;/h1&gt;
         &lt;p&gt;This is a website.&lt;/p&gt;
     &lt;/body&gt;</pre>
-					<pre class="fragment highlight-code highlight-current-red" data-fragment-index="1">
+					<pre class="fragment highlight-code highlight-current-red" data-fragment-index="2">
 &lt;/html&gt;
 					</pre>
-				</section>	
+
+    <aside class="notes">
+        <ul>
+            <li>doctype - Предназначен для указания типа текущего документа. Это необходимо, чтобы браузер понимал, как
+                следует
+                интерпретировать текущую веб-страницу, поскольку HTML существует в нескольких версиях
+            </li>
+            <li>
+                html - корневой элемент страницы. является контейнером, который заключает в себе все содержимое
+                веб-страницы
+            </li>
+            <li>
+                head - Предназначен для хранения других элементов, цель которых — помочь браузеру в работе с данными.
+                Содержимое тега &lt;head&gt; не отображается напрямую на веб-странице.
+                (meta, link, title)
+            </li>
+            <li>
+                body - предназначен для хранения содержания веб-страницы
+            </li>
+        </ul>
+    </aside>
+</section>
 
 
-				<section>
-					<h1>HTML Elements</h1>
-				</section>
+<section>
+    <h1>HTML Elements</h1>
+</section>
 
-                <!-- ko foreach: examples -->
-                    <!-- ko template: { name: 'demo-section-template' } -->
-                    <!-- /ko -->
-                <!-- /ko -->		
+<!-- ko foreach: examples -->
+<!-- ko template: { name: 'demo-section-template' } -->
+<!-- /ko -->
+<!-- /ko -->
+<section>
+    <h2>HTML5 semantic tags</h2>
+    <ul style="display: inline-block; font-size: 18px; vertical-align: top; margin-right: 30px;">
+        <li>&lt;article&gt;</li>
+        <li>&lt;aside&gt;</li>
+        <li>&lt;details&gt;</li>
+        <li>&lt;figcaption&gt;</li>
+        <li>&lt;figure&gt;</li>
+        <li>&lt;footer&gt;</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;main&gt;</li>
+        <li>&lt;mark&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;section&gt;</li>
+        <li>&lt;summary&gt;</li>
+        <li>&lt;time&gt;</li>
+    </ul>
+    <img src="img/img_sem_elements.gif" style="vertical-align: top;">
+</section>
+<section>
+    <h2>Resources</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Developer Network</a></li>
+        <li><a href="http://www.w3.org/TR/html5/">HTML5: W3C Recommendation</a></li>
+    </ul>
+</section>
 
-				<section>
-					<h2>Resources</h1>
-					<ul>
-						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Developer Network</a></li>
-						<li><a href="http://www.w3.org/TR/html5/">HTML5: W3C Recommendation</a></li>
-					</ul>
-				</section>
+</div>
+</div>
 
-			</div>
-		</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+<script type="text/javascript" src="js/scoped-style.binding.js"></script>
+<script type="text/javascript" src="js/example-container.component.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
-        <script type="text/javascript" src="js/scoped-style.binding.js"></script>
-        <script type="text/javascript" src="js/example-container.component.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>		
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<script>
 
-		<script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Optional reveal.js plugins
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() {
+                return !document.body.classList;
+            } },
+            { src: 'plugin/markdown/marked.js', condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/markdown/markdown.js', condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    [].forEach.call(document.querySelectorAll('pre.highlight-code'), function(v, i) {
+                        hljs.highlightBlock(v);
+                    });
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+            { src: 'plugin/notes/notes.js', async: true }
+        ]
+    });
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{
-						src: 'plugin/highlight/highlight.js',
-						async: true,
-						condition: function() { return !!document.querySelector( 'pre code' ); },
-						callback: function() {
-							[].forEach.call( document.querySelectorAll( 'pre.highlight-code' ), function( v, i) {
-							        hljs.highlightBlock(v);
-							    });
-							hljs.initHighlightingOnLoad();
-						}
-					},
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-		<script type="text/javascript" src="TimelineJS/build/js/storyjs-embed.js"></script>
-		<script>
-		    createStoryJS({
-				type:       'timeline',
-				width:      '800',
-				height:     '460',
-				source:     'html-history-timeline.json',
-				embed_id:   'html-history-timeline',
-				start_zoom_adjust : 2
-			});
-		</script>
-	</body>
+</script>
+<script type="text/javascript" src="TimelineJS/build/js/storyjs-embed.js"></script>
+<script>
+    createStoryJS({
+        type: 'timeline',
+        width: '800',
+        height: '460',
+        source: 'html-history-timeline.json',
+        embed_id: 'html-history-timeline',
+        start_zoom_adjust: 2
+    });
+</script>
+</body>
 </html>
